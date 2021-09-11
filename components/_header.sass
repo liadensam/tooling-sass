@@ -1,0 +1,60 @@
+/* HEADER */
+.header
+  @include headlineImage(cover);
+  overflow: hidden;
+
+.header-title,
+.perex,
+.emoji-icon
+  text-align: center;
+  color: $color-lighter;
+
+
+.header-title
+  margin: 0 auto;
+  padding-top: 3rem;
+  font-size: 4rem;
+  font-family: $title-font;
+
+.perex
+  padding: 0 2rem 1rem 2rem;
+
+
+.separator
+  border-top: 3px solid $color-lighter;
+  width: 100px;
+  margin: auto;
+
+
+.emoji-icon
+  padding-bottom: 4rem;
+  opacity: 70%;
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px)
+  .header-title
+    font-size: 2rem;
+  
+  .perex 
+    font-size: 0.9rem;
+
+
+@media screen and (max-width: 1100px)
+  .emoji-animation:hover i 
+    @include emojiAnim();
+  
+
+  .emoji-animation:active i 
+    @include emojiAnim();
+
+
+@media screen and (min-width: 1101px)
+  .emoji-animation:hover i 
+    @include emojiAnim();
+  
+
+  .emoji-animation:active i 
+    @include emojiAnim();
+  

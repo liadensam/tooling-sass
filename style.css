@@ -1,19 +1,13 @@
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 ::after,
 ::before {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-/*FONT*/
-@font-face {
-  font-family: "Rubik";
-  src: url("https://fonts.google.com/specimen/Rubik");
+  box-sizing: inherit;
 }
 
 body {
@@ -28,8 +22,26 @@ body {
 /* HEADER */
 .header {
   background-color: #e5e79b;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(0%, rgba(255, 255, 255, 0)), color-stop(10%, rgba(0, 0, 0, 0)), to(#1a1a1a)), -webkit-gradient(linear, left bottom, left top, from(#1a1a1a), to(rgba(26, 26, 26, 0))), url(./images/background.jpg);
-  background-image: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 10%, #1a1a1a 100%), linear-gradient(to top, #1a1a1a 0%, rgba(26, 26, 26, 0) 100%), url(./images/background.jpg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(white),
+      color-stop(0%, rgba(255, 255, 255, 0)),
+      color-stop(10%, rgba(0, 0, 0, 0)),
+      to(#1a1a1a)
+    ),
+    -webkit-gradient(linear, left bottom, left top, from(#1a1a1a), to(rgba(26, 26, 26, 0))),
+    url(./images/background.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      white 0%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0) 10%,
+      #1a1a1a 100%
+    ),
+    linear-gradient(to top, #1a1a1a 0%, rgba(26, 26, 26, 0) 100%),
+    url(./images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -60,7 +72,6 @@ body {
 }
 
 .emoji-icon {
-  font-style: italic;
   padding-bottom: 4rem;
   opacity: 70%;
 }
@@ -76,12 +87,12 @@ body {
   display: flex;
   background-color: #e5e79b;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 1rem;
   border-radius: 15px;
   -webkit-box-shadow: 1px 1px 19px -2px rgba(0, 0, 0, 0.39);
-          box-shadow: 1px 1px 19px -2px rgba(0, 0, 0, 0.39);
+  box-shadow: 1px 1px 19px -2px rgba(0, 0, 0, 0.39);
 }
 
 .content-boxes p {
@@ -108,15 +119,6 @@ body {
   font-size: 1.9rem;
 }
 
-/* .watercolor-img
-  max-height: 100%;
-  min-width: 100%;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 15px;
-  border: 0.5px solid #e5e79b;
- */
 .watercolor {
   background-image: url(./images/avocado.png);
   background-size: cover;
@@ -168,8 +170,10 @@ body {
   display: flex;
   padding: 0;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 35px;
+  margin: 0.5rem;
 }
 
 .icons ul li {
@@ -207,10 +211,10 @@ body {
   .content-boxes {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .contacts-hover h1 {
     margin-left: 0;
@@ -218,13 +222,13 @@ body {
   }
   .emoji-animation:hover i {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
     -webkit-transition: 1.5s;
     transition: 1.5s;
   }
   .emoji-animation:active i {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
     -webkit-transition: 1.5s;
     transition: 1.5s;
   }
@@ -236,13 +240,13 @@ body {
   }
   .emoji-animation:hover i {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
     -webkit-transition: 1.5s;
     transition: 1.5s;
   }
   .emoji-animation:active i {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
     -webkit-transition: 1.5s;
     transition: 1.5s;
   }

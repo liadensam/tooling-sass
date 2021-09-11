@@ -1,0 +1,39 @@
+/*BACKRGOUND IMAGE-TOP OF THE PAGE-HEADER*/
+@mixin headlineImage($bcgSize):
+  linear-gradient(to bottom, hsl(0, 0%, 100%) 0%, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 0%, 0) 10%, hsl(0, 0%, 10%) 100%),linear-gradient(to top, hsl(0, 0%, 10%) 0%, hsla(0, 0%, 10%, 0) 100%), url(./images/background.jpg);
+  background-size: $bcgSize;
+  background-repeat: no-repeat;
+
+
+/*ANIMATION OF EMOJI*/
+@mixin emojiAnim:
+  transform: rotate(360deg);
+  transition: 1.5s;
+
+/*BOX SHADOW*/
+@mixin boxShadow:
+  box-shadow: 1px 1px 19px -2px rgba(0, 0, 0, 0.39);
+
+/*WATERCOLOR IMAGE*/
+@mixin watercolorBcg:
+  background-image: url(./images/avocado.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
+/*PROFILE IMG*/
+@mixin profileImg($bcgColor):
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: $bcgColor;
+  margin: auto;
+
+
+/*PROFILE BOXES*/
+@mixin profileBox($bcg):
+  margin: 1rem;
+  padding: 2rem;
+  background-color: $bcg;
+  text-align: center;
+  border-radius: 15px;
