@@ -196,6 +196,11 @@ body {
   .article h2 {
     font-size: 2rem;
   }
+
+  .article p {
+    text-align: left;
+  }
+
   .contacts-hover h1 {
     font-size: 2rem;
     margin-left: 0;
@@ -214,6 +219,10 @@ body {
     flex-direction: column;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+
+  .article p {
+    text-align: left;
   }
   .contacts-hover h1 {
     margin-left: 0;
