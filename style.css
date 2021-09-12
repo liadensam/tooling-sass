@@ -141,6 +141,10 @@ body {
   margin: auto;
 }
 
+.square {
+  border-radius: 3%;
+}
+
 .light-box {
   margin: 1rem;
   padding: 2rem;
